@@ -1,4 +1,4 @@
-Feature: Title Test  Title
+Feature: Test Title of the Pages
 
-	Scenario: Test Demo Title
-		Given why multiple defination
+	Scenario: Test Home Page Title
+		Given verify home page title

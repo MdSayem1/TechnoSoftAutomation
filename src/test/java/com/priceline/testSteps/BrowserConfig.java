@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.priceline.testSteps;
 
 import com.priceline.utilities.GlobalConfig;
@@ -8,20 +5,17 @@ import com.priceline.utilities.GlobalConfig;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-/**
- * @author arafatmamun
- *
- */
-public class BrowserConfig extends GlobalConfig{
-	
+public class BrowserConfig extends GlobalConfig {
+
 	@Before
-	public static void setUpBrowser(){
+	// Initialize driver and open up browser
+	public static void setUpBrowser() {
 		ConfigDrivers();
 	}
-	
-	
+
 	@After
-	public static void stopBrowser(){
+	// Close the browser
+	public static void stopBrowser() {
 		terminateDrivers();
 	}
 }

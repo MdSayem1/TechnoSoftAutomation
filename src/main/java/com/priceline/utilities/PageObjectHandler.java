@@ -1,16 +1,21 @@
 package com.priceline.utilities;
 
-import com.priceline.pageObjects.Demo;
+import com.priceline.pageObjects.HomePage;
+import com.priceline.pageObjects.LoginPage;
 
 public abstract class PageObjectHandler {
+
+	// Creating HomePage Object
+	public static HomePage homePage() {
+
+		HomePage homePage = new HomePage();
+		return homePage;
+	}
 	
-	/*
-	 * Object For Demo Page
-	 * Arafat Mamun
-	 * 08-11-2016 13:31
-	 */
-	public static Demo demo(){
-		Demo demo = new Demo();
-		return demo;
+	// Creating LoginPage Object
+	public static LoginPage loginPage() {
+
+		LoginPage loginPage = new LoginPage();
+		return loginPage;
 	}
 }
